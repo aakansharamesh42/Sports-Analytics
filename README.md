@@ -2,6 +2,9 @@
 
 Sports Insight is designed to revolutionize training and performance in football and other sports through advanced data analytics. Utilizing a robust and flexible system developed with the Scrum methodology, Sports Insight offers comprehensive performance insights and tailored recommendations to enhance player performance, refine techniques, and reduce injury risks.
 
+Please note that the main codebase is currently maintained in the master branch.
+Switch to the master branch to view the latest code.
+
 ## Features
 
 - **Data-Driven Insights:** Through the meticulous collection and analysis of data, we provide actionable insights to improve player performance and well-being.
