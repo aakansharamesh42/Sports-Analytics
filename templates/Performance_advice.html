@@ -1,0 +1,9 @@
+<!-- performance_advice.html -->
+{% if latest_performance %}
+  <div>
+    <p><strong>Date:</strong> {{ latest_performance.date }}</p>
+    <p><strong>Advice:</strong> {{ latest_performance.training_advice }}</p>
+  </div>
+{% else %}
+  <p>No performance data available for this player.</p>
+{% endif %}

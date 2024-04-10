@@ -1,0 +1,20 @@
+image: python:3.8
+
+services:
+  - mysql:8.0  # Using MySQL service
+
+variables:
+  MYSQL_DATABASE: sport_Data
+  MYSQL_ROOT_PASSWORD: 123456  # Set MySQL root password
+  DATABASE_URL: "mysql://root:123456@mysql:3306/sport_data" #change it to your own
+
+before_script:
+  - apt-get update -qq && apt-get install -y -qq default-mysql-client
+  - python -m pip install --upgrade pip
+  - pip install -r requirements.txt
+  - pip install mysqlclient  # Ensure MySQL Python client is installed
+
+test:
+  script:
+    - python manage.py test
+    - python manage.py test app.test_database
